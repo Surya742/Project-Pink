@@ -15,15 +15,15 @@ const router = createBrowserRouter([
     element: <SimpleAccordion />,
   },
   {
-    path: "https://projectpink.netlify.app/assessment",
+    path: "/assessment",
     element: <CustomizedAccordions />,
   },
   {
-    path: "https://projectpink.netlify.app/blog",
+    path: "/blog",
     element: <TitlebarImageList />,
   },
   {
-    path: "https://projectpink.netlify.app/chat",
+    path: "/chat",
     element: <Chatbot />,
   },
 ]);
