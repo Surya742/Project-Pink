@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
 const pages = ['FAQ', 'Assessment', 'Blog', "Chatbot"];
-const links = ['/', '/assessment', '/blog', "/chat"];
+const links = ['https://projectpink.netlify.app/', 'https://projectpink.netlify.app/assessment', 'https://projectpink.netlify.app/blog', "https://projectpink.netlify.app/chat"];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
