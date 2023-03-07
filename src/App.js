@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import ResponsiveAppBar from './components/NavBar';
 import SimpleAccordion from './components/FAQ';
