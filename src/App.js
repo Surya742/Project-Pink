@@ -1,22 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
+import ResponsiveAppBar from './components/NavBar';
+import SimpleAccordion from './components/FAQ';
+import CustomizedAccordions from './components/Assessment';
+import TitlebarImageList from './components/Blogs';
+import Chatbot from './components/ChatBot';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <SimpleAccordion />,
+  },
+  {
+    path: "/assessment",
+    element: <CustomizedAccordions />,
+  },
+  {
+    path: "/blog",
+    element: <TitlebarImageList />,
+  },
+  {
+    path: "/chat",
+    element: <Chatbot />,
+  },
+]);
 
 function App() {
   return (
     <div className="App">
+      <ResponsiveAppBar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <RouterProvider router={router} />
       </header>
     </div>
   );
